@@ -31,7 +31,7 @@ The framework was evaluated using:
 - Diabetes Dataset
 - Glioma Grading Dataset
 
----
+
 
 # Research Motivation
 
@@ -58,7 +58,7 @@ This project introduces an adaptive privacy-preserving federated learning framew
 - Update magnitudes
 - Training progress
 
----
+
 
 # Main Contributions
 
@@ -92,7 +92,7 @@ Privacy budgets are allocated adaptively across communication rounds based on le
 
 The framework tracks cumulative privacy expenditure across training rounds using Rényi Differential Privacy accounting.
 
----
+
 
 # Framework Architecture
 
@@ -111,7 +111,7 @@ The AS-HDP framework contains the following main components:
 
 The architecture aligns privacy enforcement with real gradient behaviour during training.
 
----
+
 
 # Datasets Used
 
@@ -125,7 +125,7 @@ The framework was evaluated using publicly available healthcare datasets.
 
 The datasets simulate realistic heterogeneous healthcare federated learning environments.
 
----
+
 
 # Repository Structure
 
@@ -138,7 +138,7 @@ The datasets simulate realistic heterogeneous healthcare federated learning envi
 └── outputs/
 ````
 
----
+
 
 # Key Features of the Codebase
 
@@ -164,7 +164,7 @@ The codes are designed for:
 * Healthcare privacy research
 * Experimental benchmarking
 
----
+
 
 # Experimental Configuration
 
@@ -186,7 +186,7 @@ The implementation also performs:
 * Sequential privacy composition
 * Confidence interval analysis
 
----
+
 
 # Ablation Studies
 
@@ -203,7 +203,7 @@ The framework includes several ablation configurations.
 
 The ablation studies isolate the contribution of each framework component.
 
----
+
 
 # Evaluation Metrics
 
@@ -250,7 +250,7 @@ The framework tracks cumulative privacy expenditure using:
 * Rényi Differential Privacy (RDP)
 * Conversion of accumulated privacy cost into final ((\epsilon, \delta))-DP guarantees
 
----
+
 
 # Key Findings
 
@@ -265,39 +265,33 @@ The experiments show that:
 * AS-HDP reduces seed variability compared with fixed HDP
 * AS-HDP preserves clinically meaningful performance under privacy constraints
 
----
+
 
 # Installation
 
 ## Install Dependencies
 
-```bash
+bash
 pip install numpy pandas scikit-learn matplotlib torch scipy
-```
-
----
 
 # Running the Experiments
 
 ## Breast Cancer Experiments
 
-```bash
-python Breast_Cancer_AS_HDP.py
-```
+bash
+breast_cancer_as_hdp_colab_ready.py
+
 
 ## Diabetes Experiments
 
-```bash
-python Diabetes_AS_HDP.py
-```
+bash
+diabetes_as_hdp_colab_ready.py
 
 ## Glioma Experiments
 
-```bash
-python Glioma_AS_HDP.py
-```
+bash
+glioma_as_hdp_colab_ready.py
 
----
 
 # Outputs Generated
 
@@ -312,7 +306,7 @@ The framework automatically generates:
 * Convergence curves
 * AUPRC plots
 
----
+
 
 # Intended Applications
 
@@ -326,21 +320,20 @@ This repository is intended for:
 * Graduate and PhD research
 * Experimental benchmarking
 
----
+
 
 # Citation
 
 If you use this repository in your research, please cite:
 
-```bibtex
+bibtex
 @article{okaka2026ashdp,
   title={Federated Learning with Adaptive Sensitivity Hybrid Differential Privacy for Health Internet of Things Systems},
   author={Okaka, Rebecca Adhiambo and Karanja, Evanson Mwangi and Oteyo, Isaac Nyabisa},
   year={2026}
 }
-```
 
----
+
 
 # Author
 
@@ -355,16 +348,14 @@ If you use this repository in your research, please cite:
 * Adaptive Privacy Mechanisms
 
 
-
 # Acknowledgements
-
 This work builds upon research in:
-
 * Federated Learning
 * Differential Privacy
 * Adaptive Clipping
 * Rényi Differential Privacy
 * Healthcare AI
+
 
 Special thanks to the open-source research community for foundational contributions to privacy-preserving machine learning.
 
